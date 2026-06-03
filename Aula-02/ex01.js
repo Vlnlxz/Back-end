@@ -14,7 +14,7 @@ function multiplicacao(a, b) {
 
 function divisao(a, b) {
     if (b === 0) {
-        return "Erro: Divisão por zero não é permitida.";
+        return "Erro: Divisão por zero";
     }
 
     return a / b;
