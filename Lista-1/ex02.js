@@ -1,7 +1,7 @@
 const input = require('readline-sync')
 
-let base = input.questionFloat("Qual a medida da base do retangulo: ");
-let altura = input.questionFloat("Qual a medida da altura do retangulo: ");
+let base = input.question("Qual a medida da base do retangulo: ");
+let altura = input.question("Qual a medida da altura do retangulo: ");
 
 let area = base * altura;
 let perimetro = 2 * (base + altura);
