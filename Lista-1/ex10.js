@@ -1,20 +1,13 @@
-const readlineSync = require('readline-sync');
+function contarLetra(texto, letra) {
+    let total = 0;
 
-const tam = Number(readlineSync.question('Digite o tamanho do tabuleiro: '));
-
-let tabuleiro = '';
-
-for (let linha = 0; linha < tam; linha++) {
-  for (let coluna = 0; coluna < tam; coluna++) {
-    
-    if ((linha + coluna) % 2 === 0) {
-      tabuleiro += '#'; 
-    } else {
-      tabuleiro += '@'; 
+    for (let i = 0; i < texto.length; i++) {
+        if (texto[i] == letra) {
+            total = total + 1;
+        }
     }
 
-  }
-  tabuleiro += '\n';
+    return total;
 }
 
-console.log(tabuleiro);
+console.log(contarLetra("banana", "a"));
