@@ -1,0 +1,29 @@
+###
+GET http://localhost:3000/livros
+
+###
+GET http://localhost:3000/livros/1
+
+###
+GET http://localhost:3000/livros/99
+
+###
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+    "nome": "Duna",
+    "preco": 39.90
+}
+
+###
+PUT http://localhost:3000/livros/1
+Content-Type: application/json
+
+{
+    "nome": "Box Senhor dos Aneis - Edicao Especial",
+    "preco": 149.99
+}
+
+###
+DELETE http://localhost:3000/livros/2
